@@ -22,11 +22,8 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Compile source files
-        run: javac Account.java
+      - name: Grant execute permission for Gradle
+        run: chmod +x gradlew
 
-      - name: Compile test files
-        run: javac -cp .:junit-platform-console-standalone.jar AccountTest.java
-
-      - name: Run unit tests
-        run: java -jar junit-platform-console-standalone.jar --class-path . --select-class AccountTest
+      - name: Build and run tests
+        run: ./gradlew test
