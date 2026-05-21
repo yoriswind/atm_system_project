@@ -1,23 +1,21 @@
 # atm_system_project
-ATM Banking System — CSC449 Team Project | Agile/Scrum development of an object-oriented ATM simulation supporting account management, transactions, card validation, and receipt generation.
+ATM Banking System, CSC449 Team Project, Agile/Scrum development of an object-oriented ATM simulation supporting account management, transactions, card validation, and receipt generation.
 
 ## Project Overview
 This project is a simulation of an ATM Banking System built by a small 
 team using Agile/Scrum methodology. The goal is to replicate the core 
-functions of a real ATM like logging in with a card and PIN, 
+functions of a real ATM — things like logging in with a card and PIN, 
 managing account transactions, and printing receipts.
 
 ## Our Team
-| Name | Role |
-|------|------|
-| Mayk Baccaro | Scrum Master |
-| Mayk Baccaro | Product Owner |
-| Mayk Baccaro | Developer |
+- Mayk Baccaro: Scrum Master
+- Mayk Baccaro: Product Owner
+- Mayk Baccaro: Developer
 
 ## Tools & Methods
-- **Language:** Java
-- **Methodology:** Agile/Scrum
-- **Project Tracking:** GitHub Projects
+- Language: Java
+- Methodology: Agile/Scrum
+- Project Tracking: GitHub Projects
 
 ## Features
 - Card insertion and PIN verification
@@ -26,3 +24,9 @@ managing account transactions, and printing receipts.
 - Fund transfers between accounts
 - Receipt generation after each transaction
 - Transaction authorization for security
+
+## Sprint Timeline
+- Week 1: Requirements gathering; Scenario production
+- Week 2: Architectural design
+- Week 3: Implementation and testing
+- Week 4: Continuation of implementation and testing
