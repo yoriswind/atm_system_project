@@ -1,0 +1,32 @@
+name: ATM System CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Compile source files
+        run: javac Account.java
+
+      - name: Compile test files
+        run: javac -cp .:junit-platform-console-standalone.jar AccountTest.java
+
+      - name: Run unit tests
+        run: java -jar junit-platform-console-standalone.jar --class-path . --select-class AccountTest
